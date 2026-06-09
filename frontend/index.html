@@ -1,78 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SentinelAI</title>
+<div class="dashboard hidden" id="dashboard">
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <div class="sidebar">
 
-    <!-- Home Page -->
-    <div class="container" id="homePage">
+        <h2>SentinelAI</h2>
 
-        <h1>🛡️ SentinelAI</h1>
+        <button onclick="showModule('Internship')">
+            🎓 Internship
+        </button>
 
-        <h2>Unified Cyber Fraud Detection Platform</h2>
+        <button onclick="showModule('Job')">
+            💼 Job
+        </button>
 
-        <p>Do you want to detect fraud?</p>
+        <button onclick="showModule('Email')">
+            📧 Email
+        </button>
 
-        <div class="buttons">
-            <button onclick="showMenu()">YES</button>
-            <button onclick="exitApp()">NO</button>
-        </div>
+        <button onclick="showModule('SMS')">
+            📩 SMS
+        </button>
+
+        <button onclick="showModule('Website')">
+            🌐 Website
+        </button>
+
+        <button onclick="showModule('WhatsApp')">
+            💬 WhatsApp
+        </button>
+
+        <button onclick="showModule('QR Code')">
+            🔳 QR Code
+        </button>
+
+        <button onclick="showModule('Image')">
+            🖼 Image
+        </button>
+
+        <button onclick="showModule('Video')">
+            🎥 Video
+        </button>
 
     </div>
 
-    <!-- Detection Menu -->
-    <div class="menu hidden" id="menuPage">
+    <div class="content">
 
-        <h1>Select Detection Type</h1>
+        <h1 id="moduleTitle">
+            Welcome to SentinelAI
+        </h1>
 
-        <div class="cards">
+        <div id="inputArea">
 
-            <div class="card" onclick="detect('Internship')">
-                🎓 Internship Detection
-            </div>
-
-            <div class="card" onclick="detect('Job')">
-                💼 Job Detection
-            </div>
-
-            <div class="card" onclick="detect('Email')">
-                📧 Email Detection
-            </div>
-
-            <div class="card" onclick="detect('SMS')">
-                📩 SMS Scam Detection
-            </div>
-
-            <div class="card" onclick="detect('Website')">
-                🌐 Website Detection
-            </div>
-
-            <div class="card" onclick="detect('WhatsApp')">
-                💬 WhatsApp Scam Detection
-            </div>
-
-            <div class="card" onclick="detect('QR Code')">
-                🔳 QR Code Detection
-            </div>
-
-            <div class="card" onclick="detect('Image')">
-                🖼️ Image Deepfake Detection
-            </div>
-
-            <div class="card" onclick="detect('Video')">
-                🎥 Video Deepfake Detection
-            </div>
+            Select a module from the left panel.
 
         </div>
 
     </div>
 
-<script src="app.js"></script>
-
-</body>
-</html>
+</div>
