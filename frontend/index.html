@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelAI</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div class="container" id="homePage">
+
+        <h1>🛡️ SentinelAI</h1>
+
+        <h2>Unified Cyber Fraud Detection Platform</h2>
+
+        <p>Do you want to detect fraud?</p>
+
+        <div class="buttons">
+            <button onclick="showMenu()">YES</button>
+            <button onclick="exitApp()">NO</button>
+        </div>
+
+    </div>
+
+    <!-- Detection Menu -->
+    <div class="menu hidden" id="menuPage">
+
+        <h1>Select Detection Type</h1>
+
+        <div class="cards">
+
+            <div class="card" onclick="detect('Internship')">
+                🎓 Internship Detection
+            </div>
+
+            <div class="card" onclick="detect('Job')">
+                💼 Job Detection
+            </div>
+
+            <div class="card" onclick="detect('Email')">
+                📧 Email Detection
+            </div>
+
+            <div class="card" onclick="detect('SMS')">
+                📩 SMS Scam Detection
+            </div>
+
+            <div class="card" onclick="detect('Website')">
+                🌐 Website Detection
+            </div>
+
+            <div class="card" onclick="detect('WhatsApp')">
+                💬 WhatsApp Scam Detection
+            </div>
+
+            <div class="card" onclick="detect('QR Code')">
+                🔳 QR Code Detection
+            </div>
+
+            <div class="card" onclick="detect('Image')">
+                🖼️ Image Deepfake Detection
+            </div>
+
+            <div class="card" onclick="detect('Video')">
+                🎥 Video Deepfake Detection
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
