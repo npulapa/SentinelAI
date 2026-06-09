@@ -1,8 +1,12 @@
+/* Reset */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+
+/* Body */
 
 body{
     background:#0f172a;
@@ -10,24 +14,29 @@ body{
     font-family:Arial, sans-serif;
 }
 
+/* Home Page */
+
 .container{
     text-align:center;
     margin-top:120px;
 }
 
-h1{
+.container h1{
     color:#38bdf8;
+    font-size:60px;
     margin-bottom:20px;
 }
 
-h2{
+.container h2{
     margin-bottom:20px;
 }
 
-p{
-    margin-bottom:30px;
+.container p{
     font-size:20px;
+    margin-bottom:30px;
 }
+
+/* Buttons */
 
 .buttons button{
     padding:15px 35px;
@@ -38,39 +47,130 @@ p{
     color:white;
     cursor:pointer;
     font-size:18px;
+    transition:0.3s;
 }
 
 .buttons button:hover{
     background:#1d4ed8;
 }
 
-.menu{
-    text-align:center;
-    padding:40px;
+/* Hide Elements */
+
+.hidden{
+    display:none;
 }
+
+/* Dashboard */
+
+.dashboard{
+    display:flex;
+    height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:250px;
+    background:#1e293b;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.sidebar h2{
+    color:#38bdf8;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* Sidebar Buttons */
+
+.sidebar button{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.sidebar button:hover{
+    background:#2563eb;
+    transform:scale(1.03);
+}
+
+/* Content Area */
+
+.content{
+    flex:1;
+    padding:50px;
+}
+
+.content h1{
+    color:#38bdf8;
+    margin-bottom:30px;
+}
+
+/* Input Area */
+
+#inputArea{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    min-height:300px;
+    font-size:20px;
+}
+
+/* Cards */
 
 .cards{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
     gap:20px;
-    margin-top:40px;
 }
 
 .card{
-    width:250px;
-    padding:30px;
+    width:220px;
     background:#1e293b;
+    padding:30px;
     border-radius:15px;
-    cursor:pointer;
     transition:0.3s;
 }
 
 .card:hover{
     background:#2563eb;
-    transform:scale(1.05);
 }
 
-.hidden{
-    display:none;
+/* Inputs */
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:white;
+}
+
+/* Analyze Button */
+
+.analyze-btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.analyze-btn:hover{
+    background:#1d4ed8;
 }
